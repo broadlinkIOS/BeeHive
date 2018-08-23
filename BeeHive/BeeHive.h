@@ -15,7 +15,7 @@
 
 #ifndef BLService
 #define BLService(__protocol__) \
-((id<__protocol__>)([[BeeHive sharedInstance] createService:@protocol(__protocol__)]))
+((id<__protocol__>)([[BeeHive shareInstance] createService:@protocol(__protocol__)]))
 #endif
 
 
